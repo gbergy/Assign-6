@@ -1,0 +1,12 @@
+<h1>Forums List</h1>
+
+
+<div>
+<% @forums.each do |forum| %>
+	<%=render "forum", forum: forum %>
+	Submitted by: <%=@user%>
+<% end %>
+
+</div>
+
+

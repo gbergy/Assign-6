@@ -1,0 +1,23 @@
+<br>
+<section>
+<strong><%=forum.topic%></strong>
+<br>
+<div class="forumbox">
+<%=forum.body%>
+</div>
+<br>
+<%=forum.created_at%>
+<!-- %=link_to "This", user_forum_path(@user, @forum)% -->
+<!--%=link_to "This", user_forum_path(@forum)%-->
+<!--%=link_to "This", user_forum_path(@user.forum, @forum)%-->
+<!--%=link_to "This", user_forum_path(@forum.user_id, @forum)%-->
+<!--%=link_to "This", user_forum_path%-->
+<%=link_to "New Forum", new_user_forum_path([@user, @forum])%>
+</section>
+<br>
+
+
+
+
+
+

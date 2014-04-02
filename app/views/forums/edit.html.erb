@@ -1,0 +1,11 @@
+<h1>Forum Edit</h1>
+
+<%=form_for [@user, @forum], html: {method: :put} do |f| %>
+  <%=f.label :topic, "Topic" %>
+  <%=f.text_field :topic %>
+  <br>
+  <%=f.label :body, "Text" %>
+  <%=f.text_field :body %>
+  <br> 
+  <%=f.submit "Update Forum"%>
+<%end%>
